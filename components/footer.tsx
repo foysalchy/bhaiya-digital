@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Facebook } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -50,11 +51,15 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-foreground">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#about" className="hover:text-primary transition-colors">
+                <Link href="/about" className="hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
-              
+              <li>
+                <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
               <li>
                 <a href="#contact" className="hover:text-primary transition-colors">
                   Contact

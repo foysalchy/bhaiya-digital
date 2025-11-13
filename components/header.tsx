@@ -2,18 +2,15 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    // { label: "Brands", href: "#brands" },
-    // { label: "Team", href: "#team" },
-    { label: "Services", href: "#services" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
     { label: "Portfolio", href: "#portfolio" },
-    // { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ]
 
@@ -21,8 +18,9 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/70 backdrop-blur-xl border-b border-border/50 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          
-          <span className="font-black text-lg text-foreground">BhaiyaDigital</span>
+          <Link href="/" className="font-black text-lg text-foreground hover:text-primary transition-colors">
+            BhaiyaDigital
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -36,7 +34,6 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          
         </div>
 
         {/* Mobile Menu Button */}
@@ -58,7 +55,6 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-             
             </div>
           </div>
         )}
