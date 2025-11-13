@@ -169,8 +169,8 @@ const servicesData = {
 }
 
 export async function generateStaticParams() {
-  return Object.keys(servicesData).map((id) => ({
-    id,
+  return Object.keys(servicesData).map((slug) => ({
+    slug,
   }))
 }
 
@@ -179,8 +179,10 @@ export const metadata: Metadata = {
   description: "Explore our comprehensive digital services tailored to your business needs.",
 }
 
-export default function ServicePage({ params }: { params: { id: string } }) {
-  const service = servicesData[params.id as keyof typeof servicesData]
+export default function ServicePage({ params }: { params: { slug: string } }) {
+  const service = servicesData[params.slug as keyof typeof servicesData]
+console.log("Params slug:", params.slug);
+console.log("Service found:", service);
 
   if (!service) {
     notFound()
