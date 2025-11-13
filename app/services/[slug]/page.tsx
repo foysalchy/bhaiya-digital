@@ -168,6 +168,12 @@ const servicesData = {
   },
 }
 
+export async function generateStaticParams() {
+  return Object.keys(servicesData).map((slug) => ({
+    slug,
+  }))
+}
+
 export const metadata: Metadata = {
   title: "Services | BhaiyaDigital",
   description: "Explore our comprehensive digital services tailored to your business needs.",
