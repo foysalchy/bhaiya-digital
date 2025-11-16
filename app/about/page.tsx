@@ -117,10 +117,10 @@ export default function About() {
               About
             </a>
             <a href="/privacy-policy" className="font-bold text-white hover:text-orange-400 transition">
-              Privacy
+              Privacy Policy
             </a>
             <a href="#" className="font-bold text-white hover:text-orange-400 transition">
-              Terms
+              Terms & Conditions
             </a>
           </div>
         </nav>

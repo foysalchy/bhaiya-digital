@@ -83,17 +83,17 @@ export default function PrivacyPolicy() {
       <footer className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-xl mt-20">
         <nav className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex flex-wrap justify-between items-center gap-8">
-            <a href="/" className="font-bold text-white hover:text-orange-400 transition">
+             <a href="/" className="font-bold text-white hover:text-orange-400 transition">
               Home
             </a>
             <a href="/about" className="font-bold text-white hover:text-orange-400 transition">
               About
             </a>
             <a href="/privacy-policy" className="font-bold text-white hover:text-orange-400 transition">
-              Privacy
+              Privacy Policy
             </a>
             <a href="#" className="font-bold text-white hover:text-orange-400 transition">
-              Terms
+              Terms & Conditions
             </a>
           </div>
         </nav>
