@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setLoadingProgress((prev) => {
-        if (prev >= 70) return 70
+        if (prev >= 55) return 55
         return prev + Math.random() * 15
       })
     }, 300)
@@ -38,7 +38,7 @@ export default function Home() {
 
             {/* Loading section */}
             <div className="w-full space-y-6">
-              <p className="text-center text-sm font-semibold text-white/70 tracking-widest">
+              <p className="text-center text-sm font-semibold text-white/55 tracking-widest">
                 LOADING
               </p>
 
@@ -57,7 +57,7 @@ export default function Home() {
 
               {/* Progress percentage */}
               <p className="text-center text-sm text-white/60">
-                {Math.round(Math.min(loadingProgress, 70))}%
+                {Math.round(Math.min(loadingProgress, 55))}%
               </p>
             </div>
           </div>
