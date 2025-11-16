@@ -73,6 +73,11 @@ export default function Home() {
             <a href="/about" className="font-bold text-white hover:text-orange-400 transition">
               About
             </a>
+             <a href="/about" className="font-bold text-white hover:text-orange-400 transition">
+            </a>
+              <a href="/about" className="font-bold text-white hover:text-orange-400 transition">
+            </a>
+            
             <a href="/privacy-policy" className="font-bold text-white hover:text-orange-400 transition">
               Privacy Policy
             </a>
